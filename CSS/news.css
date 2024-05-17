@@ -1,0 +1,1244 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+:root {
+  --font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --cyan-950: #083344;
+  --cyan-600: #0891b2;
+  --cyan-500: #06b6d4;
+  --cyan-400: #22d3ee;
+  --cyan-300: #67e8f9;
+  --cyan-50: #ecfeff;
+  --green-400: #4ade80;
+  --green-500: #22c55e;
+  --cold-slate-900: #0f172a;
+  --cold-slate-800: #1e293b;
+  --cold-slate-700: #334155;
+  --cold-slate-600: #475569;
+  --cold-slate-400: #94a3b8;
+  --cold-slate-200: #d9d9d9;
+  --cold-slate-100: #f3f4f6;
+  --cold-slate-50: #f7f3f2;
+  --white: #fff;
+}
+
+* {
+  font-family: "Titillium Web";
+}
+
+body {
+  background: url(/IMG/Img-news/body/BG.png) no-repeat;
+  background-size: 100%;
+  background-color: #0F172A;
+  max-width: 1920px;
+}
+
+header {
+  padding: 0 82px 0 82px;
+  height: 100px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
+  padding-top: 20px;
+}
+
+.containerHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headerElement1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logotype {
+  width: 54px;
+  height: 54px;
+}
+
+.headerElement1 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  font-size: 26px;
+  color: #fff;
+}
+
+.headerElement1 span {
+  font-weight: 700;
+}
+
+.headerElement2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 50px;
+}
+
+.buttomHome,
+.buttomMythbusters,
+.buttomReviewSemes,
+.buttomNews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 8px 0 8px;
+}
+
+.buttomHome a,
+.buttomMythbusters a,
+.buttomReviewSemes a,
+.buttomNews a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.buttomHome {
+  text-align: center;
+  color: #fff;
+}
+
+.buttomNews {
+  text-align: center;
+  border-bottom: 2px solid #12BF77;
+  padding-bottom: 4px;
+}
+
+.buttomReviewSemes {
+  text-align: center;
+}
+
+.buttomMythbusters {
+  text-align: center;
+}
+
+.buttomSubscribe {
+  text-align: center;
+  padding: 16px 28px 16px 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #22D3EE;
+  border-radius: 6px;
+}
+
+.buttomSubscribe a {
+  color: #0F172A;
+  font-size: 18px;
+  font-weight: 700;
+  -webkit-transition: background-color 1s linear;
+  transition: background-color 1s linear;
+}
+
+.buttomSubscribe:hover,
+.buttomSubscribe a:hover {
+  background-color: #67E8F9;
+  color: #0F172A;
+}
+
+.SectionTitleHead {
+  padding: 0 82px 0 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 224px;
+}
+
+.SectionTitleHead h1 {
+  font-size: 78px;
+  color: #fff;
+  font-weight: 600;
+}
+
+main {
+  padding: 0 82px 0 82px;
+  overflow: hidden;
+}
+
+.container_latest_news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title_latest_news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 24px 0px 0px;
+}
+
+.title_latest_news h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 171%;
+  text-transform: uppercase;
+  color: var(--cold-slate-50);
+}
+
+.container_all_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 64px;
+}
+
+.container_1_3_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 552px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  gap: 30px;
+}
+
+.img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid var(--cold-slate-800);
+  border-radius: 16px;
+  width: 100%;
+}
+
+.Basic_card_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+
+.linkTitleHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 6px;
+}
+
+.linkTitleHead a {
+  padding: 4px 16px;
+  border-radius: 4px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  background: rgba(148, 163, 184, 0.5);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.additionally {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+  color: var(--cold-slate-200);
+}
+
+.additionally a {
+  color: var(--cold-slate-200);
+}
+
+.additionally span {
+  color: var(--green-500);
+}
+
+.additionally div {
+  width: 1px;
+  height: 16px;
+  background-color: var(--cold-slate-700);
+}
+
+.container_4_6_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+}
+
+.text_card {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 133%;
+  color: var(--cold-slate-50);
+}
+
+.container_7_9_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+}
+
+.container_10_12_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+}
+
+.container_13_15_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+}
+
+.dotet_latest_news {
+  border: 1px dashed var(--cold-slate-700);
+  width: 100%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.News_Categories h2 {
+  padding-bottom: 72px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 171%;
+  text-transform: uppercase;
+  color: #f8fafc;
+  text-align: center;
+}
+
+.News_Categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 120px;
+}
+
+.grid_container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "ar1 ar1 ar2 ar3 " "ar1 ar1 ar4 ar5 " "ar6 ar7 ar8 ar9";
+  gap: 10px;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  border-radius: 5px;
+  color: azure;
+  font-size: 20px;
+}
+
+.item-1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: ar1;
+  background: url(/IMG/Img-news/IMG_grid/RPG.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: ar2;
+  background: url(/IMG/Img-news/IMG_grid/Survival.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: ar3;
+  background: url(/IMG/Img-news/IMG_grid/Sports.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: ar4;
+  background: url(/IMG/Img-news/IMG_grid/Shooter.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  grid-area: ar5;
+  background: url(/IMG/Img-news/IMG_grid/Racing.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-6 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: ar6;
+  background: url(/IMG/Img-news/IMG_grid/Survival1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-7 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: ar7;
+  background: url(/IMG/Img-news/IMG_grid/Simulation.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-8 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  grid-area: ar8;
+  background: url(/IMG/Img-news/IMG_grid/Adventure.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-9 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+  grid-area: ar9;
+  background: url(/IMG/Img-news/IMG_grid/Platformers.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 100px 0px 100px 0px;
+  border: 2px solid var(--cold-slate-800);
+  border-radius: 16px;
+}
+
+.item img {
+  width: 32px;
+  height: 26px;
+}
+
+.item p {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 133%;
+  color: var(--cold-slate-50);
+}
+
+.item-1 p {
+  font-size: 26px;
+}
+
+.See_Categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.See_Categories a {
+  background: var(--cyan-950);
+  border: 1px solid var(--cyan-600);
+  border-radius: 6px;
+  padding: 12px 26px 12px 26px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--cyan-300);
+}
+
+.title_game_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title_game_review h2 {
+  color: #F8FAFC;
+  font-size: 52px;
+  line-height: 92px;
+}
+
+.title_game_review a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #083344;
+  color: #67E8F9;
+  height: 56px;
+  padding: 0 40px 2px 40px;
+  border-radius: 6px;
+  font-size: 22px;
+  border: 1px solid #0891B2;
+}
+
+.game_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Titillium Web";
+  gap: 64px;
+}
+
+.container_slider_game_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+}
+
+.card_game_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  gap: 30px;
+  width: 90%;
+  border: 1px solid #1E293B;
+  border-radius: 16px;
+}
+
+.img_game_review {
+  width: 100%;
+  height: 400px;
+}
+
+.img_game_review_1 {
+  background: url(/IMG/Section2/Elden\ Ring.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.img_game_review_2 {
+  background: url(/IMG/Section2/Cyberpunk\ 2077.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.img_game_review_3 {
+  background: url(/IMG/Section2/Baldur’s\ Gate\ III.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.img_game_review_4 {
+  background: url(/IMG/Section2/Starfield.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.img_game_review_5 {
+  background: url(/IMG/Section2/Starfield.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.img_game_review_6 {
+  background: url(/IMG/Section2/Spider-Man_2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.img_game_review_7 {
+  background: url(/IMG/Section2/Mortal\ Kombat\ 1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.img_game_review_8 {
+  background: url(/IMG/Section2/Resident\ Evil\ 4.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.data_game_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 25px 15px 25px;
+}
+
+.content_game_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.text_game_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.text_game_review span {
+  font-size: 14px;
+  color: var(--green-400);
+}
+
+.text_game_review p {
+  font-size: 20px;
+  color: #FFF;
+}
+
+.rating_game_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 55px;
+  height: 55px;
+  color: #F7F3F2;
+  border: 5px solid transparent;
+  border-top: 5px solid var(--green-500);
+  border-right: 5px solid var(--green-500);
+  border-bottom: 5px solid var(--green-500);
+  border-radius: 100%;
+}
+
+.rating_game_review p {
+  color: var(--cold-slate-50);
+  font-size: 20px;
+}
+
+.additional_game_review {
+  padding: 15px 25px 15px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.additional_game_review p {
+  color: var(--cold-slate-200);
+  font-size: 16px;
+}
+
+.additional_game_review a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--cyan-300);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0px 15px 15px 2px;
+}
+
+.wrapper {
+  height: 100%;
+  padding: 50px;
+  min-width: 0;
+}
+
+/* Слайдер */
+/* Оболочка  */
+/* Лента слайдів */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+/* Слайд */
+/* Слайд активний */
+/* Слайд основний */
+/* слайд поцентру */
+/* Стрілка */
+/* Стрілка в право */
+/* Стрілка в ліво */
+/* Стрілка не активна */
+/* Крапки */
+.slider {
+  /* min-width: 0; */
+}
+
+.slider .slick-arrow {
+  z-index: 5;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.slider .slick-arrow.slick-prev {
+  position: absolute;
+  top: 34px;
+  left: 310px;
+  background: url(/IMG/Img-news/News_Categories_icon/left.svg) 0 0/100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  position: absolute;
+  top: 34px;
+  left: 375px;
+  background: url(/IMG/Img-news/News_Categories_icon/right.svg) 0 0/100% no-repeat;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 120px;
+}
+
+.container_foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 140px;
+  padding: 80px 128px 0 128px;
+}
+
+.logo_foot {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+
+.logotype_foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 36px;
+  gap: 18px;
+}
+
+.logotype_foot h2 {
+  color: #fff;
+}
+
+.logotype_foot span {
+  font-weight: 700;
+}
+
+.foot_text {
+  font-size: 16px;
+  line-height: 160%;
+  color: #cbd5e1;
+}
+
+.navigation_foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 84px;
+}
+
+.navigation_site {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 48px;
+}
+
+.navigation_site h2 {
+  color: #67E8F9;
+  font-size: 22px;
+}
+
+.Navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Navigation1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.Navigation2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  color: #fdfdfd;
+}
+
+.color_link_foot {
+  color: #fdfdfd;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  font-size: 16px;
+  line-height: 160%;
+  text-decoration: underline;
+}
+
+.follow_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+.follow_site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.follow_site h2 {
+  color: #67E8F9;
+  font-size: 22px;
+}
+
+.all_follow_icon_3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.follow_icon_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.icon_foot {
+  width: 38px;
+  height: 40px;
+}
+
+.icon_foot img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom_line {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #94A3B8;
+  background-color: #1E293B;
+}
+
+.text1 {
+  padding-left: 108px;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.text2 {
+  padding-right: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
